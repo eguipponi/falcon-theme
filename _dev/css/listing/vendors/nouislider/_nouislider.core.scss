@@ -24,6 +24,7 @@
 .noUi-connects {
   z-index: 0;
   overflow: hidden;
+  background: #E8E8E7;
   border-radius: $nouislider-connects-border-radius;
 }
 
@@ -42,7 +43,8 @@
 .noUi-connect {
   width: 100%;
   height: 100%;
-  background: $nouislider-connects-background-color;
+  background: #545454;
+  // background: $nouislider-connects-background-color;
 }
 
 .noUi-origin {
@@ -92,10 +94,13 @@
 }
 
 .noUi-handle {
+  background: #545454;
+  border: 1px solid #545454;
+
   position: absolute;
   cursor: default;
-  background: $nouislider-handle-background-color;
-  border: $nouislider-handle-border-width solid $nouislider-handle-border-color;
+  // background: $nouislider-handle-background-color;
+  // border: $nouislider-handle-border-width solid $nouislider-handle-border-color;
   border-radius: $nouislider-handle-border-radius;
   outline: none;
   box-shadow: $nouislider-handle-shadow;
