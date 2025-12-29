@@ -15,7 +15,8 @@
   }
 
   &__link {
-    color: $gray-600;
+    color: #FFFFFF;
+    // color: $gray-600;
     @include hover-focus() {
       color: $gray-900;
     }

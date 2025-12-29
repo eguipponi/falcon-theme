@@ -39,8 +39,9 @@
               </a>
             </div>
           {else}
-            <a href="{$node.link}" class="list-group-item list-group-item-action">
-              {$node.name}
+            <a href="{$node.link}" class="list-group-item list-group-item-action-dropdown">
+              <span>{$node.name}</span>
+              <i class="material-icons d-block">&#xe315;</i>
             </a>
           {/if}
           {if $node.children}
