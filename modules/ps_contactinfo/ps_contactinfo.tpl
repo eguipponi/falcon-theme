@@ -23,10 +23,10 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-<div class="col-md-3 col-12 mb-lg-4">
+<div class="column-info col-md-3 col-12 mb-lg-4">
 
-  <div class="d-flex align-items-center mb-3 justify-content-between position-relative">
-    <span class="h4 mb-0">{l s='Store information' d='Shop.Theme.Global'}</span>
+  <div class="column-info__title d-flex align-items-center mb-3 justify-content-between position-relative">
+    <span class="column-info__title__text h4 mb-0">{l s='Store information' d='Shop.Theme.Global'}</span>
     <a href="#footer_contact_list" class="icon-collapse stretched-link text-reset d-block d-md-none" data-toggle="collapse">
       <i class="material-icons d-block"></i>
     </a>
