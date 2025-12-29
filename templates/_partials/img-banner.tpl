@@ -23,30 +23,8 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-{block name='breadcrumb'}
-  {if $breadcrumb.links|count > 1}
-    <div class="row nav-breadcrumb">
-      <div class="container">
-        <nav class="nav" aria-label="breadcrumb" data-depth="{$breadcrumb.count}">
-          {block name='breadcrumb_list'}
-            <ol class="breadcrumb">
-              {foreach from=$breadcrumb.links item=path name=breadcrumb}
-                {block name='breadcrumb_item'}
-                  <li {if $smarty.foreach.breadcrumb.last}class="breadcrumb-item active" aria-current="page"{else}class="breadcrumb-item"{/if}>
-                    {if !$smarty.foreach.breadcrumb.last}
-                      <a href="{$path.url}">
-                    {/if}
-                      {$path.title}
-                    {if !$smarty.foreach.breadcrumb.last}
-                      </a>
-                    {/if}
-                  </li>
-                {/block}
-              {/foreach}
-            </ol>
-          {/block}
-        </nav>
-      </div>
-    </div>
-  {/if}
+{block name='img-banner'}
+  <div class="row img_banner">
+    <img src="http://localhost:8080/themes/falcon/assets/img/banner/banner_header.svg" alt="banner" class="item-banner">
+  </div>    
 {/block}

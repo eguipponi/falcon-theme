@@ -1,0 +1,28 @@
+.title_banner {
+    background-color: #328189;
+    margin-bottom: 57px;
+    
+    .container {
+        display: flex;
+        align-items: center;
+
+        .item-icon { 
+            max-height: 58px;
+            height: auto; 
+        }
+
+        .text-title {
+            margin: 0;
+            color: #FFFFFF;
+            font-family: Montserrat;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+
+        }
+    }
+}
+

@@ -23,30 +23,11 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-{block name='breadcrumb'}
-  {if $breadcrumb.links|count > 1}
-    <div class="row nav-breadcrumb">
-      <div class="container">
-        <nav class="nav" aria-label="breadcrumb" data-depth="{$breadcrumb.count}">
-          {block name='breadcrumb_list'}
-            <ol class="breadcrumb">
-              {foreach from=$breadcrumb.links item=path name=breadcrumb}
-                {block name='breadcrumb_item'}
-                  <li {if $smarty.foreach.breadcrumb.last}class="breadcrumb-item active" aria-current="page"{else}class="breadcrumb-item"{/if}>
-                    {if !$smarty.foreach.breadcrumb.last}
-                      <a href="{$path.url}">
-                    {/if}
-                      {$path.title}
-                    {if !$smarty.foreach.breadcrumb.last}
-                      </a>
-                    {/if}
-                  </li>
-                {/block}
-              {/foreach}
-            </ol>
-          {/block}
-        </nav>
-      </div>
+{block name='title-banner'}
+  <div class="row title_banner">
+    <div class="container">
+      <img src="http://localhost:8080/themes/falcon/assets/img/banner/cosmetica_1.svg" alt="Icono" class="item-icon">
+      <h1 class="text-title">cosmética</h1>
     </div>
-  {/if}
+  </div>    
 {/block}
