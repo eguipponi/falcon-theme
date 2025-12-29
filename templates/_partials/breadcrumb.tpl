@@ -36,7 +36,11 @@
                     {if !$smarty.foreach.breadcrumb.last}
                       <a href="{$path.url}">
                     {/if}
-                      {$path.title}
+                      {if $smarty.foreach.breadcrumb.first}
+                        <i class="material-icons d-block">&#xea44;</i>
+                      {else}
+                        {$path.title}
+                      {/if}
                     {if !$smarty.foreach.breadcrumb.last}
                       </a>
                     {/if}

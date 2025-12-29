@@ -7,6 +7,28 @@
                 background: none;
                 margin-bottom: 0;
                 border: 0;
+                align-items: center;
+                padding: 0;
+
+                .breadcrumb-item > a {
+                    color: #328189;
+                }
+
+                .breadcrumb-item.active {
+                    color: #328189;
+                    align-items: center;
+                    display: flex;
+                }
+
+                .breadcrumb-item + .breadcrumb-item::before {
+                    font-family: 'Material Icons';
+                    font-size: 22px;
+                    content: '\e315';
+                    color: #328189;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
             }
         }
     }
