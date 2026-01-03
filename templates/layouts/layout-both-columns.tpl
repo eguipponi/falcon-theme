@@ -49,6 +49,17 @@
       </header>
 
       <section id="wrapper">
+        {block name='breadcrumb'}
+          {include file='_partials/breadcrumb.tpl'}
+        {/block}
+
+        {block name='img-banner'}
+          {include file='_partials/img-banner.tpl'}
+        {/block}
+
+        {block name='title-banner'}
+          {include file='_partials/title-banner.tpl'}
+        {/block}
 
         {block name='notifications'}
           {include file='_partials/notifications.tpl'}
@@ -56,9 +67,6 @@
 
         {hook h="displayWrapperTop"}
         <div class="container">
-          {block name='breadcrumb'}
-            {include file='_partials/breadcrumb.tpl'}
-          {/block}
 
           <div class="row">
             {block name="left_column"}
