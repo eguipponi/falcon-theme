@@ -1,1 +1,5 @@
 _dev/node_modules
+assets/css
+assets/img-dist
+assets/js
+assets/preload.html
