@@ -2,6 +2,7 @@
 
 .main-menu {
   $self: &;
+  background: #328189;
 
   &__item-header {
     display: flex;
@@ -24,8 +25,10 @@
   }
 
   &__list {
+    margin: 0;
+
     @include media-breakpoint-up(md) {
-      margin: 0 0 map.get($spacers, 2);
+      margin: 0;
 
       &--1 {
         display: flex;
@@ -35,6 +38,7 @@
   }
 
   &__item-link {
+    max-height: 38px;
     display: block;
     padding: $modal-inner-padding;
 
@@ -46,7 +50,7 @@
     &--top {
       @include font-size($font-size-lg);
       font-weight: 700;
-      color: $gray-900;
+      color: #FFF;
 
       @include hover-focus() {
         text-decoration: none;
@@ -58,7 +62,7 @@
     }
 
     &--sub {
-      color: $gray-900;
+      color: #FFF;
       @include media-breakpoint-up(md) {
         margin: 0 0 map.get($spacers, 1);
       }
@@ -92,6 +96,7 @@
   }
 
   &__item {
+    max-height: 38px;
     border-top: 1px solid $border-color;
 
     &--top {
@@ -124,16 +129,15 @@
   }
 
   &__sub {
-    background: $gray-100;
     @include media-breakpoint-up(md) {
+      background: #639095;
       position: absolute;
       top: 100%;
       right: 0;
       left: 0;
       z-index: 100;
-      padding: map.get($spacers, 4) map.get($spacers, 4) map.get($spacers, 3);
+      padding: 0 map.get($spacers, 4) 0;
       visibility: hidden;
-      background: $white;
       box-shadow: $box-shadow;
       opacity: 0;
       transition: 0.2s ease-in;

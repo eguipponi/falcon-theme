@@ -2,7 +2,8 @@
 /* HEADER STYLES */
 
 .l-header {
-  margin: 0 0 map.get($spacers, 3);
+  // margin: 0 0 map.get($spacers, 3);
+  margin: 0;
 }
 
 .header-top {
@@ -16,6 +17,10 @@
       flex-wrap: wrap;
     }
 
+  }
+
+  &__container {
+    display: contents;
   }
 
   &__link {
@@ -41,10 +46,15 @@
   }
 
   &__icon {
+    color: #6B2BC7;
     display: block;
-    font-size: rem-calc(26px);
+    font-size: rem-calc(24px);
     @include media-breakpoint-up(sm) {
-      font-size: rem-calc(32px);
+      font-size: rem-calc(24px);
+    }
+
+    &__user {
+      color: #328189;
     }
   }
 
@@ -68,6 +78,32 @@
       @include media-breakpoint-down(sm) {
         flex-grow: 0;
       }
+    }
+
+    &__icon {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--user {
+      padding: 0;
+    }
+
+    &--cart {
+      padding: 0;
+    }
+  }
+}
+
+.header-nav-days {
+  background: #F6C544;
+  
+  .desktop-info {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      color: #222222;
     }
   }
 }
