@@ -1,0 +1,43 @@
+#left-column {
+  width: 313px;
+  height: min-content;
+  border: 1px solid #3281894D;
+  border-radius: 8px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+
+  .card {
+    border: none;
+    box-shadow: none;
+    margin-bottom: none;
+  
+
+    .card-header {
+      background: none;
+      border-bottom: 1px solid #328189;
+      padding: 0px 0px 20px 0px;
+      font-weight: 500;
+
+      .card-title {
+        color: #328189;
+      }
+    }
+
+    .list-group {
+      border-bottom: 1px solid #328189;
+      border-radius: 0;
+      padding: 20px 0px 20px 0px;
+      gap: 20px;
+
+      .list-group-item {
+        padding: 0;
+        border: 0;
+        color: #545454;
+      }
+    }
+
+  }
+
+
+}
