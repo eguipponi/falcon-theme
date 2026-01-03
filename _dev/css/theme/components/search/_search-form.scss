@@ -18,9 +18,9 @@
     height: $search-input-height;
     padding: 0 rem-calc(70px) 0 rem-calc(30px);
     line-height: $search-input-height;
-    color: $gray-900;
-    border-width: 1px;
-    border-radius: 99em;
+    color: #328189;
+    border: 1.5px solid #328189;
+    border-radius: 5px;
 
     &:focus {
       background: $gray-100;
@@ -30,13 +30,18 @@
   }
 
   &__btn {
+    background: #328189;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     padding: 0 map.get($spacers, 3);
     line-height: 1;
-    color: $primary;
+    color: #FFFFFF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
   }
 }
 

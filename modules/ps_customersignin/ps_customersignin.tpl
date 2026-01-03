@@ -34,7 +34,7 @@
     {/if}
   >
     <div class="header-top__icon-container">
-      <span class="header-top__icon material-icons">person</span>
+      <span class="header-top__icon header-top__icon__user material-icons">person</span>
     </div>
   </a>
 </div>
